@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Belanja Barang</title>
+    </head>
+    <body>
+        <fieldset>
+            <table style="min-width: 70%; text-align: center;">
+                <tr>
+                    <td>Home</td>
+                    <td>|</td>
+                    <td>Generate Link</td>
+                    <td>|</td>
+                    <td>Transaction History</td>
+                    <td>|</td>
+                    <td>Policy</td>
+                    <td>|</td>
+                    <td>Logout</td>
+                </tr>
+            </table>
+        </fieldset>
+        <br/>
+        <table>
+            <tr>
+                <th rowspan="3"><img src="assets/img/macbook.jpg" alt="macbook" width="300" height="250"></th>
+                <td style="text-align: right; vertical-align: 0px;"><b>Title Here :</b></td>
+                <td><input type="text" name="title" style="width: 300px; border-color: black;"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right; vertical-align: 20vmax;"><b>Description : </b></td>
+                <td><textarea cols="41" rows="12" style="border-color: black;"></textarea></td>
+            </tr>
+            <tr>
+                <td><b>Account Number :</b></td>
+                <td><input type="number" name="acc" style="width: 300px; border-color: black;"></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th style="text-align: left;"><input type="button" id="pictures" style="width: 150px;" value="Upload Picture" onclick="document.getElementById('file').click();"/>
+                    <input type="file" style="display:none;" id="file" name="file"/></th>
+                <th style="width: 822px;">Bank : <input type="text" list="namebank" name="bank" style="border-color: black; width: 300px;">
+                <datalist id="namebank">
+                    <option value="HSBC"></option>
+                    <option value="BCA"></option>
+                    <option value="BRI"></option>
+                    <option value="Mandri"></option>
+                    <option value="BNI"></option>
+                </datalist></th>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td style="width: 310px;"></td>
+                <td><b>Account Holder :</b></td>
+                <td><input type="text" name="holder" style="border-color: black;"></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td style="width: 337px;"></td>
+                <td><b>Transaction :</b></td>
+                <td><input type="number" name="transaction" min="1" max="3" style="width: 30px; border-color: black;"></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th style="width: 430px;"></th>
+                <th style="column-span: all;">*if the transaction is for 3 person, Choose 3 from the drop-down list.</th>
+                <td></td>
+            </tr>
+        </table>
+        <table>
+            <tr style="text-align: left; color: green;">
+                <td style="width: 430px;"></td> 
+                <td><input type="checkbox" id="pay1" name="pay1" value="mobilephone">
+                    <label for="pay1"><b>Send to Mobile Phone</b></label></td>
+            </tr>
+            <tr style="text-align: left; color: green;">
+                <td style="width: 430px;"></td>
+                <td><input type="checkbox" id="pay2" name="pay2" value="email">
+                    <label for="pay2"><b>Send to Email</b></label></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td style="width: 267px;"></td>
+                <td style="text-align: right;"><b>Send to Mobile Phone :</b></td>
+                <td><input type="number" name="phone" style="border-color: black;"></td>
+            </tr>
+            <tr>
+                <td style="width: 267px;"></td>
+                <td style="text-align: right;"><b>Send to Email :</b></td>
+                <td><input type="email" name="email" style="border-color: black;"></td>
+            </tr>
+        </table>
+        <br/>
+        <table>
+            <tr>
+                <td style="width: 430px;"></td>
+                <td><input type="submit" name="link" value="Generate Nabr Link" style="background-color: green; color: white; width: 150px;"></td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>

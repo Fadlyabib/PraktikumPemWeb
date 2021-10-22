@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Cart</title>
+        <style>
+            fieldset{width: 250px}
+        </style>
+    </head>
+    <body>
+        <h1>Your Cart</h1>
+        <hr/>
+        <table>
+            <tr>
+                <td style="min-width: 400px;">Item</td>
+                <td style="min-width: 100px;">Price</td>
+                <td>Quantity</td>
+            </tr>
+        </table>
+        <hr/>
+        <table>
+            <tr>
+                <td><img src="assets/img/t-shirt.jpg" alt="black t-shirt" width="100"></td>
+                <td style="min-width: 300px;">T-Shirt <br> Size: Small</td>
+                <td style="min-width: 100px;"><b>$20.00</b></td>
+                <td><input type="number" min="1" max="10"></td>
+            </tr>
+        </table>
+        <hr/>
+        <table>
+            <tr>
+                <td style="min-width: 470px;"></td>
+                <td>Subtotal: <b>$20.00</b></td>
+            </tr>
+        </table>
+        <hr/>
+        <br/>
+        <fieldset style="background-color:#BDBDBD; border: none; min-width: 250px;">
+            <p><b>Summary (1 item)</b></p>
+            <table style="min-width: 360px;">
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$20.00</td>
+                </tr>
+            </table>
+            <table style="min-width: 265px;">
+                <tr>
+                    <td>Shipping</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            <table style="min-width: 262px;">
+                <tr>
+                    <td>Est. Taxes</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            <hr/>
+            <table style="min-width: 460px;">
+                <tr>
+                    <td>Total</td>
+                    <td><b>$20.00</b></td>
+                </tr>
+            </table>
+            <input type="submit" value="Checkout" style="background-color: blue; color: white; min-width: 250px;">
+        </fieldset>
+    </body> 
+</html>
